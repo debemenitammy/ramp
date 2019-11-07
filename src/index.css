@@ -513,6 +513,18 @@ h6.sub-title {
 .close-btn {
 	color: #ff4500;
 }
+
+.modal-title {
+	color: #162252;
+	font-weight: 800;
+}
+
+.update-box label, #old-password, #new-password {
+	color: #162252 !important;
+	font-weight: 600;
+}
+
+
 /* .scroll-y {
 	overflow:  hidden;
 	overflow-y: auto;
