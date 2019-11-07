@@ -497,6 +497,22 @@ h6.sub-title {
 	font-size: 1.2rem;
 }
 
+.btn-change-pwd {
+	background-color: #01013d;
+	color: #ffffff;
+}
+
+.modal-content {
+	border-radius: 30px;
+}
+
+.modal-body input {
+	background-color: #c0b9b9;
+}
+
+.close-btn {
+	color: #ff4500;
+}
 /* .scroll-y {
 	overflow:  hidden;
 	overflow-y: auto;
