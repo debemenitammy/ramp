@@ -72,6 +72,12 @@ body {
 
 }
 
+#landing-btn {
+	position: absolute;
+	top: 66px;
+	right: 40px;
+}
+
 .details img {
 	width: 50%;
 	height: 100%;
@@ -591,6 +597,7 @@ h6.sub-title {
 	}
 
 	.details {
+		position: relative;
 		min-height: auto;
 		padding: 2rem 1rem 2rem 1rem !important;
 		text-align: center;
@@ -598,6 +605,8 @@ h6.sub-title {
 		align-items: center;
 		justify-content: center;
 	}
+
+	
 
 	.details h1 {
 		font-size: 45px;
