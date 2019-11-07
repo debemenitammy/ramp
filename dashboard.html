@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="lib/font-awesome/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid h-100 clear-gutters">
+        <div class="d-flex">
+            <div class="col-md-3 col-lg-3 h-100 sidebar-wrap clear-gutters">
+                <div class="sidebar">
+                    <nav class="d-none navbar flex-column navbar-expand-sm navbar-light navbar-collapsed">
+                        <div class="d-flex logo-wrap">
+                            <img class="logo" src="assets/img/logo.svg" alt="logo">
+
+                        </div>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#"><i class="fas fa-columns"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fas   fa-hand-point-up"></i></a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fas fa-thumbtack"></i> </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fas fa-user"></i> </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <nav class="d-none navbar flex-column navbar-expand-md navbar-light nav-open show-flex">
+                        <div class="d-flex logo-wrap">
+                            <img class="logo" src="assets/img/logo.svg" alt="logo">
+                            <div class="navbar-brand">
+                                COPYRAMP
+                            </div>
+                            <button class="navbar-toggler navbar-tog-custom" id="btn-close-nav" type="button"
+                                data-target="#collapsibleNavbar">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="dashboard.html"><i class="fas fa-columns dash"></i> <span
+                                            class="home">Dashboard</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="select.html"><i class="fas   fa-hand-point-up point"></i>
+                                        <span class="home">Select Niche</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="saved-copy.html"><i class="fas fa-thumbtack pin"></i>
+                                        <span class="home">Saved Copy</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="accountSetting.html"><i class="fas fa-user account"></i>
+                                        <span class="home">Account Setting</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactSupport.html"><i
+                                            class="fas fa-envelope support"></i> <span class="home">Support</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fas fa-sign-out-alt sign"></i> <span
+                                            class="home">Sign Out</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+            <div class="flex-grow-1 px-3">
+                <nav class="navbar navbar-expand-sm px-5 top-nav">
+                    <button class="d-none navbar-toggler" id="btn-open-nav" type="button"
+                        data-target="#collapsibleNavbar">
+                        <i class="fas fa-bars text-dark"></i>
+                    </button>
+                    <a class="text-dark" href="#">Saved Notes</a>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link mr-4" href="#">Account Setting
+                                <a class="nav-item nav-link" href="#">Sign Out</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row mx-3">
+                        <div class="col-12 col-md-6">
+                            <div class="user-stat">
+                                <div class="setion-title-wrap">
+                                    <h3 class="title">
+                                        Niche and Sales Letter Statistics
+                                    </h3>
+                                    <h6 class="text-muted sub-title">
+                                        Total number of niche and saved letters
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="row stat mt-5">
+                                <div class="col-4">
+                                    <div class="box-num text-center rounded" data-toggle="tooltip"
+                                        data-placement="bottom" title="Total Numbers of Notes">0</div>
+
+                                </div>
+                                <div class="col-4">
+                                    <div class="box-num text-center rounded py-3 px-4" data-toggle="tooltip"
+                                        data-placement="bottom" title="Tooltip on bottom">0</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="box-num text-center rounded py-3 px-4" data-toggle="tooltip"
+                                        data-placement="bottom" title="Tooltip on bottom">0</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="top-niche">
+                                <div class="setion-title-wrap">
+                                    <h3 class="title text-right">
+                                        Top 5 Niches
+                                    </h3>
+                                    <h6 class="text-muted sub-title text-right">
+                                        Here is the top 5 most viewed niches
+                                    </h6>
+                                </div>
+                                <div class="row top-niches">
+                                    <div class="col-12 col-md-6 col-xl-4">
+                                        <div
+                                            class="niche-box text-center d-flex rounded flex-column justify-content-end">
+                                            <span class="niche-icon">
+                                                <i class="fas fa-thumbtack pin"></i>
+                                            </span>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <button class="navbar-toggler" id="btn-open-niche" type="button">
+                                                    <i class="fas fa-bars"></i>
+                                                </button>
+                                                <span class="niche-title">
+                                                    Internet Banking
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-6 col-xl-4">
+                                        <div
+                                            class="niche-box text-center d-flex rounded flex-column justify-content-end">
+                                            <span class="niche-icon">
+                                                <i class="fas fa-thumbtack pin"></i>
+                                            </span>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <button class="navbar-toggler" id="btn-open-niche" type="button">
+                                                    <i class="fas fa-bars"></i>
+                                                </button>
+                                                <span class="niche-title">
+                                                    Consulting
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-xl-4">
+                                        <div
+                                            class="niche-box text-center d-flex rounded flex-column justify-content-end">
+                                            <span class="niche-icon">
+                                                <i class="fas fa-thumbtack pin"></i>
+                                            </span>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <button class="navbar-toggler" id="btn-open-niche" type="button">
+                                                    <i class="fas fa-bars"></i>
+                                                </button>
+                                                <span class="niche-title">
+                                                    Baking
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-xl-4">
+                                        <div
+                                            class="niche-box text-center d-flex rounded flex-column justify-content-end">
+                                            <span class="niche-icon">
+                                                <i class="fas fa-thumbtack pin"></i>
+                                            </span>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <button class="navbar-toggler" id="btn-open-niche" type="button">
+                                                    <i class="fas fa-bars"></i>
+                                                </button>
+                                                <span class="niche-title">
+                                                    Baking Soda
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-xl-4">
+                                        <div
+                                            class="niche-box text-center d-flex rounded flex-column justify-content-end">
+                                            <span class="niche-icon">
+                                                <i class="fas fa-thumbtack pin"></i>
+                                            </span>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <button class="navbar-toggler" id="btn-open-niche" type="button">
+                                                    <i class="fas fa-bars"></i>
+                                                </button>
+                                                <span class="niche-title">
+                                                    Driving Lessons
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="py-5">
+                                <div class="d-flex flex-column video-wrap text-center">
+                                    <h4 class="title mt-2">Quick Tour Video</h4>
+                                    <div class="embed-responsive embed-responsive-16by9 video mt-4">
+                                        <iframe class="embed-responsive-item" width="560" height="315"
+                                            src="https://www.youtube.com/embed/pZw6qgQc1xo" frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="mt-5">
+                                        <h2>Need Help? Watch this quick tutorial video</h2>
+                                        <h5>This short video will walk you through how Copy ramp work</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="dashboard-table py-5">
+                                <div class="table-title">
+                                    <h2 class="title mb-0">
+                                        Suggested Sales Letter
+                                    </h2>
+                                    <div class="sub-title text-muted">
+                                        Have you taken a glance at this sales letter
+                                    </div>
+                                </div>
+                                <table class="table">
+                                    <!-- <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead> -->
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><i class="fas fa-check"></i></th>
+                                            <td class="note-desc">Lorem Ipsum dolor shike bula shilo dino vero</td>
+                                            <td><i class="far fa-eye view-icon"></i></td>
+                                            <td><i class="far fa-trash-alt remove-icon"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
