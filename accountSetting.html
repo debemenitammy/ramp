@@ -14,7 +14,7 @@
 <body>
     <div class="container-fluid h-100">
         <div class="d-flex">
-            <div class="col-md-3 col-lg-3 sidebar-wrap clear-gutters">
+            <div class="h-100 sidebar-wrap-fix clear-gutters">
                 <div class="sidebar">
                     <nav class="d-none navbar flex-column navbar-expand-sm navbar-light navbar-collapsed">
                         <div class="d-flex logo-wrap">
@@ -27,7 +27,7 @@
                                     <a class="nav-link" href="#"><i class="fas fa-columns"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fas   fa-hand-point-up"></i>
+                                    <a class="nav-link" href="#"><i class="fas   fa-hand-point-up"></i></a>
 
                                 </li>
                                 <li class="nav-item">
@@ -89,126 +89,131 @@
 
             </div>
             <div class="flex-grow-1">
-                <nav class="navbar navbar-expand-sm px-5 top-nav">
-                    <button class="d-none navbar-toggler" id="btn-open-nav" type="button"
-                        data-target="#collapsibleNavbar">
-                        <i class="fas fa-bars text-dark"></i>
-                    </button>
-                    <a class="text-dark" href="#">Account Setting</a>
+                <div class="container">
+                    <nav class="navbar navbar-expand-sm px-5 top-nav">
+                        <button class="d-none navbar-toggler" id="btn-open-nav" type="button"
+                            data-target="#collapsibleNavbar">
+                            <i class="fas fa-bars text-dark"></i>
+                        </button>
+                        <a class="text-dark" href="#">Account Setting</a>
 
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-item nav-link mr-4" href="dashboard.html">Dashboard</a>
-                            <a class="nav-item nav-link" href="#">Sign Out</a>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link mr-4" href="dashboard.html">Dashboard</a>
+                                <a class="nav-item nav-link" href="#">Sign Out</a>
+                            </div>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
 
-                <div class="content-wrap">
-                    <div class="content-title">
-                        <h2 class="title text-dark mb-0">
-                            Edit Profile
-                        </h2>
-                    </div>
+                    <div class="content-wrap">
 
 
-                    <div class="container">
-                        <div class="form-area">
-                            <div>
-                                <form class="mt-5 profileForm">
-                                    <h1 class="editProfile">Edit Profile</h1>
-                                    <div class="row">
-                                        <div class="form-group col-md-4">
-                                            <label for="username" class="firstNameAccount">FIRST NAME</label>
-                                            <input type="text" id="username" name="username" size="35" class="c-field">
+
+                        <div class="container">
+                            <div class="form-area">
+                                <div>
+
+                                    <form class="profileForm">
+                                        <div class="content-title mb-5">
+                                            <h3 class="title text-dark mb-0">
+                                                Edit Profile
+                                            </h3>
                                         </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="name" class="firstNameAccount">LAST NAME</label>
-                                            <input type="text" id="name" name="email" class="c-field">
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <div class="avatar-upload">
-                                                <div class="avatar-edit">
-                                                    <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
-                                                    <label for="imageUpload">Upload</label>
+                                        <div class="row">
+                                            <div class="form-group col-md-4 order-2 order-md-1">
+                                                <label for="username" class="firstNameAccount">FIRST NAME</label>
+                                                <input type="text" id="username" name="username" size="35"
+                                                    class="c-field">
+                                            </div>
+                                            <div class="form-group col-md-4 order-3 order-md-2">
+                                                <label for="name" class="firstNameAccount">LAST NAME</label>
+                                                <input type="text" id="name" name="email" class="c-field">
+                                            </div>
+                                            <div class="form-group col-md-4 order-1 order-md-3">
+                                                <div class="avatar-upload">
+                                                    <div class="avatar-edit">
+                                                        <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                                                        <label for="imageUpload">Upload</label>
+                                                    </div>
+                                                    <div class="avatar-preview">
+                                                        <div id="imagePreview">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="avatar-preview">
-                                                    <div id="imagePreview"
-                                                        style="background-image: url(assets/img/avatar.png);">
+                                            </div>
+                                            <div class="form-group col-md-4 order-4 order-md-4">
+                                                <label for="email" class="firstNameAccount">USERNAME</label>
+                                                <input type="email" id="email" name="email" class="c-field">
+                                            </div>
+                                            <div class="form-group col-md-8 order-5 order-md-5">
+                                                <label for="email" class="firstNameAccount">EMAIL ADDRESS</label>
+                                                <input type="email" id="email" name="email" class="c-field">
+                                            </div>
+                                            <div class="form-group col-md-6 order-6 order-md-6">
+                                                <label for="email" class="firstNameAccount">SHORT BIO</label>
+                                                <input type="email" id="email" name="email" class="c-field">
+                                            </div>
+                                            <div class="form-group col-md-6 order-7 order-md-7">
+                                                <label for="email" class="firstNameAccount">ADDRESS</label>
+                                                <input type="email" id="email" name="email" class="c-field">
+                                            </div>
+                                            <div class="form-group col-md-4 order-8 order-md-8">
+                                                <label for="email" class="firstNameAccount">CITY</label>
+                                                <input type="email" id="email" name="email" class="c-field">
+                                            </div>
+                                            <div class="form-group col-md-4 order-9 order-md-9">
+                                                <label for="email" class="firstNameAccount">COUNTRY</label>
+                                                <input type="email" id="email" name="email" class="c-field">
+                                            </div>
+                                            <div class="form-group col-md-4 order-10 order-md-10">
+                                                <label for="email" class="firstNameAccount">POSTAL CODE</label>
+                                                <input type="email" id="email" name="email" class="c-field">
+                                            </div>
+                                        </div>
+                                        <div class="profbuttons mt-4 order-11 order-md-11">
+                                            <div><a href="" class="btn btn-danger buttonPass" data-toggle="modal"
+                                                    data-target="#exampleModalCenter">Change Password</a></div>
+                                            <div><input type="submit" class="c-btn updateButton" value="Update Profile">
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header border-0">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Update
+                                                            Password
+                                                        </h5>
+                                                        <button type="button" class="close mx-0" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span class="close-btn" aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body update-box">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="old-password">Old Password</label>
+                                                                <input type="password" class="form-control"
+                                                                    id="old-password" aria-describedby="passwordHelp"
+                                                                    placeholder="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="new-password">Password</label>
+                                                                <input type="password" class="form-control"
+                                                                    id="new-password" placeholder="">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer border-0 text-right">
+                                                        <button type="button" class="btn btn-change-pwd">Update
+                                                            Password</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="email" class="firstNameAccount">USERNAME</label>
-                                            <input type="email" id="email" name="email" class="c-field">
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="email" class="firstNameAccount">EMAIL ADDRESS</label>
-                                            <input type="email" id="email" name="email" class="c-field">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="email" class="firstNameAccount">SHORT BIO</label>
-                                            <input type="email" id="email" name="email" class="c-field">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="email" class="firstNameAccount">ADDRESS</label>
-                                            <input type="email" id="email" name="email" class="c-field">
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="email" class="firstNameAccount">CITY</label>
-                                            <input type="email" id="email" name="email" class="c-field">
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="email" class="firstNameAccount">COUNTRY</label>
-                                            <input type="email" id="email" name="email" class="c-field">
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="email" class="firstNameAccount">POSTAL CODE</label>
-                                            <input type="email" id="email" name="email" class="c-field">
-                                        </div>
-                                    </div>
-                                    <div class="profbuttons mt-4">
-                                        <div><a href="" class="btn btn-danger buttonPass" data-toggle="modal"
-                                                data-target="#exampleModalCenter">Change Password</a></div>
-                                        <div><input type="submit" class="c-btn updateButton" value="Update Profile">
-                                        </div>
-                                    </div>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header border-0">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle">Update Password
-                                                    </h5>
-                                                    <button type="button" class="close mx-0" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span class="close-btn" aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body update-box">
-                                                    <form>
-                                                        <div class="form-group">
-                                                            <label for="old-password">Old Password</label>
-                                                            <input type="password" class="form-control"
-                                                                id="old-password" aria-describedby="passwordHelp"
-                                                                placeholder="">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="new-password">Password</label>
-                                                            <input type="password" class="form-control"
-                                                                id="new-password" placeholder="">
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="modal-footer border-0 text-right">
-                                                    <button type="button" class="btn btn-change-pwd">Update Password</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

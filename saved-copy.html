@@ -14,7 +14,7 @@
 <body>
     <div class="container-fluid h-100">
         <div class="d-flex">
-            <div class="col-md-3 col-lg-3 sidebar-wrap clear-gutters">
+            <div class="h-100 sidebar-wrap clear-gutters">
                 <div class="sidebar">
                     <nav class="d-none navbar flex-column navbar-expand-sm navbar-light navbar-collapsed">
                         <div class="d-flex logo-wrap">
@@ -28,7 +28,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="select.html"><i class="fas   fa-hand-point-up"></i>
-
+                                    </a>
                                 </li>
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#"><i class="fas fa-thumbtack"></i> </a>
@@ -67,16 +67,16 @@
                                         <span class="home">Select Niche</span></a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="saved-copy.html"><i class="fas fa-thumbtack pin"></i> <span
-                                            class="home">Saved Copy</span></a>
+                                    <a class="nav-link" href="saved-copy.html"><i class="fas fa-thumbtack pin"></i>
+                                        <span class="home">Saved Copy</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="accountSetting.html"><i class="fas fa-user account"></i> <span
-                                            class="home">Account Setting</span></a>
+                                    <a class="nav-link" href="accountSetting.html"><i class="fas fa-user account"></i>
+                                        <span class="home">Account Setting</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contactSupport.html"><i class="fas fa-envelope support"></i> <span
-                                            class="home">Support</span></a>
+                                    <a class="nav-link" href="contactSupport.html"><i
+                                            class="fas fa-envelope support"></i> <span class="home">Support</span></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#"><i class="fas fa-sign-out-alt sign"></i> <span
@@ -89,94 +89,97 @@
 
             </div>
             <div class="flex-grow-1">
-                <nav class="navbar navbar-expand-sm px-5 top-nav">
-                    <button class="d-none navbar-toggler" id="btn-open-nav" type="button"
-                        data-target="#collapsibleNavbar">
-                        <i class="fas fa-bars text-dark"></i>
-                    </button>
-                    <a class="text-dark" href="#">Saved Notes</a>
+                <div class="container">
+                    <nav class="navbar navbar-expand-sm px-5 top-nav">
+                        <button class="d-none navbar-toggler" id="btn-open-nav" type="button"
+                            data-target="#collapsibleNavbar">
+                            <i class="fas fa-bars text-dark"></i>
+                        </button>
+                        <a class="text-dark" href="dashboard.html">Dashboard</a>
 
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-item nav-link mr-4" href="#">Account Setting
-                                <a class="nav-item nav-link" href="#">Sign Out</a>
-                        </div>
-                    </div>
-                </nav>
-
-                <div class="content-wrap">
-                    <div class="content-title">
-                        <h2 class="title mb-0">
-                            Your Saved Sales Letters
-                        </h2>
-                        <div class="text-muted">
-                            Please note you can only edit and download your modified <strong>Sales letter</strong> in
-                            <u>DOC</u> format
-                        </div>
-                    </div>
-
-                    <div class="table-wrap border mt-4 p-3">
-                        <form class="form-inline">
-                            <div class="form-group mb-2">
-                                <label for="entries-amt">Show</label>
-                                <input size="3" type="number" class="form-control entries-input mx-2" id="entries-amt"
-                                    value="10">
-                                <span>Entries</span>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link mr-4" href="#">Account Setting
+                                    <a class="nav-item nav-link" href="#">Sign Out</a>
                             </div>
-                            <div class="form-group ml-auto mb-2">
-                                <div class="search-wrap border">
-                                    <input type="search" class="form-control border-0" id="search-entries"
-                                        placeholder="Search" aria-label="Search">
-                                    <i class="fa fa-search px-2" aria-hidden="true"></i>
+                        </div>
+                    </nav>
+
+                    <div class="content-wrap">
+                        <div class="content-title">
+                            <h3 class="title mb-0">
+                                Your Saved Sales Letters
+                            </h3>
+                            <h6 class="text-muted sub-title">
+                                Please note you can only edit and download your modified <strong>Sales letter</strong>
+                                in
+                                <u>DOC</u> format
+                            </h6>
+                        </div>
+
+                        <div class="table-wrap border mt-4 p-3">
+                            <form class="form-inline">
+                                <div class="form-group mb-2">
+                                    <label for="entries-amt">Show</label>
+                                    <input size="3" type="number" class="form-control entries-input mx-2"
+                                        id="entries-amt" value="10">
+                                    <span>Entries</span>
                                 </div>
-                            </div>
+                                <div class="form-group ml-auto mb-2">
+                                    <div class="search-wrap border">
+                                        <input type="search" class="form-control border-0" id="search-entries"
+                                            placeholder="Search" aria-label="Search">
+                                        <i class="fa fa-search px-2" aria-hidden="true"></i>
+                                    </div>
+                                </div>
 
-                        </form>
+                            </form>
 
-                        <table class="table table-bordered mb-0 saved-copies">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">SALES LETTER TITLE</th>
-                                    <th scope="col">DESCRIPTION</th>
-                                    <th scope="col">VIEW LETTER</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- <tr>
+                            <table class="table table-bordered mb-0 saved-copies">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">SALES LETTER TITLE</th>
+                                        <th scope="col">DESCRIPTION</th>
+                                        <th scope="col">VIEW LETTER</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <tr>
                                     <th scope="row">1</th>
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
                                 </tr> -->
-                                <tr>
-                                    <td colspan="4">
-                                        No data available in table
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            No data available in table
+                                        </td>
+                                    </tr>
 
-                            </tbody>
+                                </tbody>
 
-                        </table>
+                            </table>
 
-                        <div class="anlysis my-5">
-                            <h6 class="text-muted">Showing
-                                <span id="starting-entry">0</span> of <span id="end-entry">0</span></h6>
+                            <div class="anlysis my-5">
+                                <h6 class="text-muted">Showing
+                                    <span id="starting-entry">0</span> of <span id="end-entry">0</span></h6>
+                            </div>
+
+
                         </div>
 
-
+                        <nav class="mt-4" aria-label="pagination">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item">
+                                    <span class="page-link btn-prev text-light">Previous</span>
+                                </li>
+                                <li class="page-item ml-4">
+                                    <a class="page-link btn-next text-light" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-
-                    <nav class="mt-4" aria-label="pagination">
-                        <ul class="pagination justify-content-end">
-                            <li class="page-item">
-                                <span class="page-link btn-prev text-light">Previous</span>
-                            </li>
-                            <li class="page-item ml-4">
-                                <a class="page-link btn-next text-light" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </div>

@@ -14,7 +14,7 @@
 <body>
     <div class="container-fluid h-100">
         <div class="d-flex">
-            <div class="col-md-3 col-lg-3 sidebar-wrap clear-gutters">
+            <div class="h-100 sidebar-wrap-fix clear-gutters">
                 <div class="sidebar">
                     <nav class="d-none navbar flex-column navbar-expand-sm navbar-light navbar-collapsed">
                         <div class="d-flex logo-wrap">
@@ -27,7 +27,7 @@
                                     <a class="nav-link" href="#"><i class="fas fa-columns"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fas   fa-hand-point-up"></i>
+                                    <a class="nav-link" href="#"><i class="fas   fa-hand-point-up"></i></a>
 
                                 </li>
                                 <li class="nav-item">
@@ -89,65 +89,70 @@
 
             </div>
             <div class="flex-grow-1">
-                <nav class="navbar navbar-expand-sm px-5 top-nav">
-                    <button class="d-none navbar-toggler" id="btn-open-nav" type="button"
-                        data-target="#collapsibleNavbar">
-                        <i class="fas fa-bars text-dark"></i>
-                    </button>
-                    <a class="text-dark" href="dashboard.html">Dashboard</a>
+                <div class="container">
+                    <nav class="navbar navbar-expand-sm px-5 top-nav">
+                        <button class="d-none navbar-toggler" id="btn-open-nav" type="button"
+                            data-target="#collapsibleNavbar">
+                            <i class="fas fa-bars text-dark"></i>
+                        </button>
+                        <a class="text-dark" href="dashboard.html">Dashboard</a>
 
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-item nav-link mr-4" href="accountSetting.html">Account Setting</a>
-                            <a class="nav-item nav-link" href="#">Sign Out</a>
-                        </div>
-                    </div>
-                </nav>
-
-                <div class="content-wrap">
- 
-
-                    <div class="container">
-                        <div class="form-area">
-                            <div>
-                                <form class="mt-5 profileForm">
-                                    <div class="content-title">
-                                        <h2 class="welcomePage text-dark mb-0">
-                                            Welcome to the Support Page
-                                        </h2>
-                                        <h4 class="need">Need help, having any issue or suggestions? Kindly use the form
-                                            below</h4>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="username" class="userAccount">USERNAME</label>
-                                            <input type="text" id="username" name="username" size="35" class="c-field">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="name" class="userAccount">EMAIL ADDRESS</label>
-                                            <input type="text" id="name" name="email" class="c-field">
-                                        </div>
-
-                                        <div class="form-group col-md-12">
-                                            <input type="text" class="c-field" placeholder="Subject">
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <textarea class="c-field form-rounded" rows="5" id="comment"
-                                                placeholder="Message"></textarea>
-                                        </div>
-
-                                    </div>
-                                    <div class="profbuttons mt-4">
-                                        <div><a href="" class="btn btn-danger buttonPass">Check Knowledge</a></div>
-                                        <div><input type="submit" class="c-btn updateButton" value="Contact Support">
-                                        </div>
-                                    </div>
-                                </form>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link mr-4" href="accountSetting.html">Account Setting</a>
+                                <a class="nav-item nav-link" href="#">Sign Out</a>
                             </div>
                         </div>
+                    </nav>
+
+                    <div class="content-wrap">
+
+
+                        <div class="container">
+                            <div class="form-area">
+                                <div>
+                                    <form class="profileForm">
+                                        <div class="content-title">
+                                            <h3 class="title text-dark mb-0">
+                                                Welcome to the Support Page
+                                            </h3>
+                                            <h6 class="text-muted sub-title">Need help, having any issue or suggestions?
+                                                Kindly use the form
+                                                below</h6>
+                                        </div>
+                                        <div class="row mt-5">
+                                            <div class="form-group col-md-6">
+                                                <label for="username" class="userAccount">USERNAME</label>
+                                                <input type="text" id="username" name="username" size="35"
+                                                    class="c-field">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="name" class="userAccount">EMAIL ADDRESS</label>
+                                                <input type="text" id="name" name="email" class="c-field">
+                                            </div>
+
+                                            <div class="form-group col-md-12">
+                                                <input type="text" class="c-field" placeholder="Subject">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <textarea class="c-field form-rounded" rows="5" id="comment"
+                                                    placeholder="Message"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div class="profbuttons mt-4">
+                                            <div><a href="" class="btn btn-danger buttonPass">Check Knowledge</a></div>
+                                            <div><input type="submit" class="c-btn updateButton"
+                                                    value="Contact Support">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
-
-
                 </div>
             </div>
         </div>

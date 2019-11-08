@@ -3,7 +3,7 @@ $(function() {
     const btnNavOpen = $('#btn-open-nav');
     const navCollapse = $('.navbar-collapsed');
     const navOpen = $('.nav-open');
-    const sideBarWrap = $('.sidebar-wrap');
+    const sideBarWrap = $('.sidebar-wrap, .sidebar-wrap-fix');
     
     btnNavClose.on('click', function () {
         btnNavOpen.toggleClass('show');
